@@ -2,9 +2,9 @@
 function Banner () {
 
     return (
-        <div className="kasa-banner">
+        <div id="Overlay" className="kasa-banner">
             
-            <div id="Overlay" className="kasa-banner-text">Chez vous, partout et ailleurs</div>
+            <div  className="kasa-banner-text">Chez vous, partout et ailleurs</div>
             
         </div>
       );
