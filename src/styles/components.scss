@@ -71,12 +71,12 @@
   text-align: center;
   height: 223px;
   border-radius: 25px;
-  background: url("/asset/images/IMG1.png");
+  background: rgba(0, 0, 0, 0.6) url("/asset/images/IMG1.png");
   background-size:cover;
   background-position:center;
   z-index: 0;
   box-shadow: (0 4px 4px #00000040);
-  filter: brightness(40%);
+  background-blend-mode: darken;
      
 }
 

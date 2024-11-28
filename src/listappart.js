@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Appart from "./asset/location.json";
 
 function Listappart () {
