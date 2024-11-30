@@ -11,7 +11,7 @@ import Mainpropos from "./components/mainpropos.jsx"
 function App () {
   return (     <div>
                 <Header />
-                <Mainpropos />
+                <Mainhome />
                 <Footer />
                 </div>
           )
