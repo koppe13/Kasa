@@ -1,4 +1,4 @@
-
+import data from "../asset/location.json";
 
 function Vignette () {
    
@@ -6,15 +6,19 @@ function Vignette () {
         
             
                 <div className="kasa-vignette">
-                    <a className="kasa-card" href="#">
-                        <article className="kasa-card">
-                            <img className="kasa-image" src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="photos"></img>
+                  {data.map((location) => (
+
+                    <a href="#">
+                          <article className="kasa-card" key={location.id}>
+                            <img className="kasa-image" src={location.cover} alt={location.title}></img>
                           <div className="kasa-card-content">
-                            <a className="kasa-card-text">Appartement cosy</a> 
+                            <h2 className="kasa-card-text" >{location.title}</h2> 
                           </div>
                         </article>
-                    
                     </a>
+                    
+                    ))}
+                    
                 </div>
                 
             

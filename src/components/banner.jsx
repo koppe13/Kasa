@@ -4,7 +4,7 @@ function Banner () {
     return (
         <div id="Overlay" className="kasa-banner">
             
-            <div  className="kasa-banner-text">Chez vous, partout et ailleurs</div>
+            <h1  className="kasa-banner-text">Chez vous, partout et ailleurs</h1>
             
         </div>
       );
