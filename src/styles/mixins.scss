@@ -4,5 +4,16 @@
   }
 
 @mixin typo {
-  font-family: Montserrat;
+    font-family: Montserrat;
+}
+
+@mixin rang {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+@mixin colonne {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
 }

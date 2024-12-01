@@ -1,3 +1,5 @@
+import Valderoulant from "./valderoulant.jsx"
+
 
 
 function Mainpropos () {
@@ -7,12 +9,13 @@ function Mainpropos () {
             
             <div className="kasa-propos-banner"></div>
             <div className="kasa-propos-valeurs">
-                <span className="kasa-propos-valderoulant">Fiabilité</span>
-                <span className="kasa-propos-valderoulant">Respect</span>
-                <span className="kasa-propos-valderoulant">Service</span>
-                <span className="kasa-propos-valderoulant">Sécurité</span>
+                <Valderoulant />
+                <Valderoulant />
+                <Valderoulant />
+                <Valderoulant />
+                
             </div>
-                        
+                     
             
         </div>
       );

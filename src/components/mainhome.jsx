@@ -3,7 +3,7 @@ import Vignette from "./vignette.jsx";
 
 function Mainhome () {
    
-        return (<div>
+        return (
                     
       
                     <div className="kasa-main">
@@ -16,7 +16,7 @@ function Mainhome () {
                         < Vignette />
                     </div>  
                     </div>
-                </div>
+                
         );
     
     

@@ -2,19 +2,15 @@ import Appart from "./asset/location.json";
 
 function Listappart () {
 
-   
-        
-            <div>
-            
                 {Appart.map((item) => (
-                    <card
+                    <article
                         key={item.id}
                         title={item.title}
                         cover={item.cover}                        
                     />    
                 ))}
             
-            </div>
+           
 
 
 }

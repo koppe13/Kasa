@@ -1,0 +1,25 @@
+@import "colors";
+@import "mixins";
+
+
+.kasa-valderoulant{
+    @include typo;
+    @include rang;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $color-trois;
+    font-weight: bold;
+    color: $color-un;
+    padding-left: 15px;
+    padding-right: 15px;  
+  }
+  .kasa-propos-valeurs .kasa-valderoulant{
+    height: 52px;
+    border-radius: 5px;
+  }
+  .kasa-log-valeurs .kasa-valderoulant{
+    width: 45%;
+    height: 52px;
+    border-radius: 10px;
+    gap: 10%;
+  }
