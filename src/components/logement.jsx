@@ -1,18 +1,20 @@
-import Listappart from "../listappart";
+//import Listappart from "../listappart";
 import Arrowl from "../asset/images/arrow_back.png";
 import Arrowr from "../asset/images/arrow_forward.png";
 import Host from "../asset/images/Host.png";
 import Valderoulant from "../components/valderoulant.jsx"
 import Vector from "../asset/images/Vector.png"
-
+import data from "../asset/location.json";
 
 
 function Logement () {
 
     return (
-    <div className="kasa-affichage">    
+    <div className="kasa-affichage"> 
+
+    
         <div className="kasa-logement-caroussel">
-            <img className="kasa-log" key={Listappart} src={Listappart.cover} alt={Listappart.title}></img>
+            <img className="kasa-log" key={data.id} src={data.cover} alt={data.title}></img>
             <div className="kasa-arrow">
                 <img className="kasa-arrow-left" src={Arrowl}></img>
                 <img className="kasa-arrow-right" src={Arrowr}></img>
@@ -32,7 +34,7 @@ function Logement () {
             </div>
             <div className="kasa-log-present">
                 <div className="kasa-log-user">
-                    <div classname="kasa-user">
+                    <div className="kasa-user">
                         <a className="kasa-user-name">Alexandre</a>
                         <a className="kasa-user-name">Dumas</a>
                     </div>
@@ -54,6 +56,7 @@ function Logement () {
             <Valderoulant />
             <Valderoulant />
         </div>
+        
     </div>
       );
 

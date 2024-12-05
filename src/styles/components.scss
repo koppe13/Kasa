@@ -306,3 +306,12 @@
   @include rang;
   justify-content: space-between;
 }
+.button {
+  background-color:transparent;
+  border: none;
+  cursor:pointer;
+  transition: 300ms;
+      &:active {
+      transform:rotate(0.5turn);
+      
+}}

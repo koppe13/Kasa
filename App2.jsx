@@ -10,21 +10,45 @@ import Mainhome from "./components/mainhome.jsx";
 import Main404 from "./components/main404.jsx";
 import Mainpropos from "./components/mainpropos.jsx";
 import Logement from "./components/logement.jsx";
+import Home from "./pages/home.jsx";
+import App2 from "./src/App2.jsx"
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    errorElement: <PageError/>,
+      children: [{
+        path : 'Acceuil',
+      },
+      {
+        path : 'A propos',  
+      }    
+    ]
+  }
+]);
+
+
+function PageError (){
+    return  <>
+            <Main404 />
+    </>
+}
+
+
+function Root () {
+  return <>
+         <Home/>
+         </>
+}
+
+
 
 
 function App () {
-  return (     <div>
-                <Header />
-                <Logement />
-                <Mainpropos />
-                <Mainhome />
-                <Footer />
-                </div>
-          )
-  
-  
-
-  
-};
-
-export default App;
+ 
+ return <RouterProvider router={router}/>
+  }
+          
+export default Home;
