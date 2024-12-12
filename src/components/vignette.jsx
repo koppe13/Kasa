@@ -1,14 +1,13 @@
-import data from "../asset/location.json";
+import data from "../location.json";
 
 function Vignette () {
-   
     return (
         
             
                 <div className="kasa-vignette">
                   {data.map((location) => (
 
-                    <a href="#">
+                    <a  href={`/logement/${location.id}`}>
                           <article className="kasa-card" key={location.id}>
                             <img className="kasa-image" src={location.cover} alt={location.title}></img>
                           <div className="kasa-card-content">

@@ -1,5 +1,5 @@
 import kasaLogo from "../asset/images/LOGO.svg";
-
+//import Navbar from "./navbar";
 function Header () {
     
 return (
@@ -9,8 +9,8 @@ return (
       </div>
         <nav className="kasa-nav-lien">
           
-            <a href="#accueil" className="nav">Accueil</a>
-            <a href="#apropos" className="nav">A Propos</a> 
+            <a href="#accueil" className="nav">Acceuil</a>
+            <a href="#apropos" className="nav">A propos</a> 
              
         </nav>
     </div>
