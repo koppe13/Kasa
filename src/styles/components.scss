@@ -214,15 +214,21 @@
 }
 .kasa-logement-caroussel{
   @include rang;  
-  height:415px;
+  height:auto;
   background-color: $color-quatre;
   border-radius: 20px
 }
 
 .kasa-arrow{
   @include rang;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: auto;
+}
+.kasa-log{
+  display: flex;
+  object-fit: cover;
+  width: auto;
+  height: auto;
 }
 
 .kasa-log-title{
