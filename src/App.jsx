@@ -31,22 +31,6 @@ const router = createBrowserRouter([
 ]);
 
 
-//function PageError (){
-//    return  <>
-//            <Main404 />
-//    </>
-//}
-
-
-//function Root () {
-//  return <>
-//         <Home/>
-//        </>
-//}
-
-
-
-
 function App () {
  
  return <RouterProvider router={router}/>
