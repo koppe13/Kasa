@@ -17,7 +17,7 @@ const Valderoulant = () => {
           <div className="kasa-valderoulant">
                 <a href="/">Fiabilité</a>
                 <button className="button" onClick={toggleCollapse}>
-                    <img  src={chevron} alt={''}></img>
+                    <img  src={chevron} alt={'chervon anime'}></img>
                 </button>
           </div>
           <div className={`collapse-content ${isOpen ? "open" : ""}`}>

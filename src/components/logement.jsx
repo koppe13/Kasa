@@ -18,14 +18,14 @@ function Logement () {
     return (
         
     <div className="kasa-affichage" > 
-            
-       <div className="kasa-logement-caroussel" key={appart.id}>
+            < Carrousel />
+      {/*} <div className="kasa-logement-caroussel" key={appart.id}>
             <div className="kasa-arrow">
                 <img className="kasa-arrow-left" src={Arrowl}></img>
                 <img className="kasa-arrow-right" src={Arrowr}></img>
                 <img className="kasa-log" src={appart.cover} alt={appart.title}></img>
             </div>
-        </div> 
+        </div> */}
         <div className="kasa-log-title">
             <div className="kasa-log-presentation">
                 <div className="kasa-log-item">

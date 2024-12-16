@@ -14,7 +14,7 @@ function Mainhome () {
                         </div>
                         <div className="kasa-main-grid">
                         < Vignette />
-                    </div>  
+                        </div>  
                     </div>
                 
         );
