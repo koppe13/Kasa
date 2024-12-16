@@ -21,15 +21,15 @@ function Logement () {
         <div className="kasa-logement-caroussel" key={appart.id}>
             <div className="kasa-arrow">
                 <img className="kasa-arrow-left" src={Arrowl}></img>
-                <img className="kasa-log" key={appart.title} src={appart.cover} alt={appart.title}></img>
                 <img className="kasa-arrow-right" src={Arrowr}></img>
+                <img className="kasa-log" key={appart.title} src={appart.cover} alt={appart.title}></img>
             </div>
         </div>
         <div className="kasa-log-title">
             <div className="kasa-log-presentation">
                 <div className="kasa-log-item">
                     <h3 className="kasa-log-h">{appart.title}</h3>
-                    <a className="kasa-log-a">Paris, Île-de-France</a>
+                    <a className="kasa-log-a">{appart.location}</a>
                 </div>
                 <div className="Kasa-tag-presentation">
                     <div className="kasa-tag"><a>Cosy</a></div>
@@ -40,10 +40,9 @@ function Logement () {
             <div className="kasa-log-present">
                 <div className="kasa-log-user">
                     <div className="kasa-user">
-                        <a className="kasa-user-name">Alexandre Dumas</a>
-                        <a className="kasa-user-name">Dumas</a>
+                        <a className="kasa-user-name">{appart.host.name}</a>
                     </div>
-                    <img className="kasa-img-user" src={Host}></img>    
+                    <img className="kasa-img-user" src={appart.host.picture}></img>    
                 </div>
                 <div className="kasa-star">
                     <div className="kasa-star-ligne">

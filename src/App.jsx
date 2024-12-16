@@ -5,7 +5,7 @@ import './styles/components.scss';
 import './styles/valderoulant.scss';
 import Main404 from "./components/main404.jsx";
 import {Home} from "./pages/home";
-import Logement from "./components/logement";
+import {Header} from './components/header.jsx';
 import {Apropos} from "./pages/apropos.jsx";
 import ProfileContainer from "./components/logementcontainer/index.jsx";
 

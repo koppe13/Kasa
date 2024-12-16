@@ -4,7 +4,14 @@
             <Card
                 title={logement.title}
                 pictures={logement.pictures}
-                
+                cover={logement.cover}
+                description={logement.description}
+                host={logement.host.name}
+                hostpic={logement.host.picture}
+                rating={logement.rating}
+                location={logement.location}
+                equipements={logement.equipements}
+                tags={logement.tags}
             />
         </Link>
     ))}

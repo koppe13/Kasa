@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import kasaLogo from "../asset/images/LOGO.svg";
-//import Navbar from "./navbar";
+
+
 function Header () {
     
 return (
@@ -9,8 +11,8 @@ return (
       </div>
         <nav className="kasa-nav-lien">
           
-            <a href="#accueil" className="nav">Acceuil</a>
-            <a href="#apropos" className="nav">A propos</a> 
+            <Link to='/' className="nav">Acceuil</Link>
+            <Link to='component/mainpropos' className="nav">A propos</Link> 
              
         </nav>
     </div>
