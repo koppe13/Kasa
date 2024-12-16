@@ -6,7 +6,7 @@ import Valderoulant from "./valderoulant.jsx"
 import Vector from "../asset/images/Vector.png"
 import { useParams } from 'react-router-dom'
 import data from "../location.json"
-
+import Carrousel from "../components/carrousel.jsx"
 
 
 function Logement () {
@@ -14,17 +14,18 @@ function Logement () {
 
     const appart = data.find((loge) => loge.id === id )
     
+       
     return (
         
     <div className="kasa-affichage" > 
-        
-        <div className="kasa-logement-caroussel" key={appart.id}>
+            
+       <div className="kasa-logement-caroussel" key={appart.id}>
             <div className="kasa-arrow">
                 <img className="kasa-arrow-left" src={Arrowl}></img>
                 <img className="kasa-arrow-right" src={Arrowr}></img>
-                <img className="kasa-log" key={appart.title} src={appart.cover} alt={appart.title}></img>
+                <img className="kasa-log" src={appart.cover} alt={appart.title}></img>
             </div>
-        </div>
+        </div> 
         <div className="kasa-log-title">
             <div className="kasa-log-presentation">
                 <div className="kasa-log-item">
@@ -32,9 +33,10 @@ function Logement () {
                     <a className="kasa-log-a">{appart.location}</a>
                 </div>
                 <div className="Kasa-tag-presentation">
-                    <div className="kasa-tag"><a>Cosy</a></div>
-                    <div className="kasa-tag"><a>Canal</a></div>
-                    <div className="kasa-tag"><a>Paris 10</a></div>
+                
+                    <div className="kasa-tag"><a>{appart.tags}</a></div>
+                
+                    
                 </div>
             </div>
             <div className="kasa-log-present">
