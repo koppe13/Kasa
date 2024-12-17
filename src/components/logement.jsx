@@ -13,7 +13,7 @@ function Logement () {
     const { id } = useParams() 
 
     const appart = data.find((loge) => loge.id === id )
-    
+    //const tag = appart.tags.map((tag) => tag)
        
     return (
         
@@ -33,9 +33,9 @@ function Logement () {
                     <a className="kasa-log-a">{appart.location}</a>
                 </div>
                 <div className="Kasa-tag-presentation">
-                
-                    <div className="kasa-tag"><a>{appart.tags}</a></div>
-                
+                {appart.tags.map((tag) => {
+                   return  <div className="kasa-tag"><a>{tag}</a></div>
+                    })}
                     
                 </div>
             </div>
