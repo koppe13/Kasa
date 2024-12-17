@@ -28,16 +28,15 @@ function Logement () {
         </div> */}
         <div className="kasa-log-title">
             <div className="kasa-log-presentation">
-                <div className="kasa-log-item">
-                    <h3 className="kasa-log-h">{appart.title}</h3>
+                <h3 className="kasa-log-h">{appart.title}</h3>
                     <a className="kasa-log-a">{appart.location}</a>
-                </div>
-                <div className="Kasa-tag-presentation">
-                {appart.tags.map((tag) => {
-                   return  <div className="kasa-tag"><a>{tag}</a></div>
+                
+                    <div className="Kasa-tag-presentation">
+                    {appart.tags.map((tag) => {
+                   return  <div className="kasa-tag"><a className="kasa-tag-text">{tag}</a></div>
                     })}
-                    
-                </div>
+                    </div>
+                
             </div>
             <div className="kasa-log-present">
                 <div className="kasa-log-user">

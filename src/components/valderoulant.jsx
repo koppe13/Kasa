@@ -1,8 +1,12 @@
 import chevron from "../asset/images/arrow.png"
 import React, { useState } from "react";
-
+import data from "../location.json"
+import { useParams } from 'react-router-dom'
 
 const Valderoulant = () => {
+
+    const { id } = useParams()
+    const appart = data.find((loge) => loge.id === id )
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +25,9 @@ const Valderoulant = () => {
                 </button>
           </div>
           <div className={`collapse-content ${isOpen ? "open" : ""}`}>
-            <p>voici l'element deployé</p>
+          {appart.equipments.map((equipments) => {
+           return <li className="collapse-text">{equipments}</li>
+          })}
           </div>
         </div>
     )
