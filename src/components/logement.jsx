@@ -11,6 +11,7 @@ import Carrousel from "../components/carrousel.jsx"
 
 function Logement () {
     const { id } = useParams() 
+    const Equipements = "Equipements"
 
     const appart = data.find((loge) => loge.id === id )
     //const tag = appart.tags.map((tag) => tag)
@@ -18,7 +19,7 @@ function Logement () {
     return (
         
     <div className="kasa-affichage" > 
-            < Carrousel />
+            < Carrousel namealt={appart.title}/>
       {/*} <div className="kasa-logement-caroussel" key={appart.id}>
             <div className="kasa-arrow">
                 <img className="kasa-arrow-left" src={Arrowl}></img>
@@ -58,8 +59,8 @@ function Logement () {
            
         </div>
         <div className="kasa-log-valeurs">
-            <Valderoulant />
-            <Valderoulant />
+            <Valderoulant nameVariable="Equipements1" />
+            <Valderoulant nameVariable="Equipements2"/>
         </div>
     
     </div>

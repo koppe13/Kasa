@@ -9,10 +9,10 @@ function Mainpropos () {
             
             <div className="kasa-propos-banner"></div>
             <div className="kasa-propos-valeurs">
-                <Valderoulant />
-                <Valderoulant />
-                <Valderoulant />
-                <Valderoulant />
+                <Valderoulant nameVariable="test1"/>
+                <Valderoulant nameVariable="test2"/>
+                <Valderoulant nameVariable="test3"/>
+                <Valderoulant nameVariable="test4"/>
                 
             </div>
                     

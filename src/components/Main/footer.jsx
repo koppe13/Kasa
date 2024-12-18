@@ -1,4 +1,4 @@
-import kasaLogo2 from "../asset/images/LOGO NB.svg";
+import kasaLogo2 from "../../asset/images/LOGO NB.svg";
 
 function Footer () {
 

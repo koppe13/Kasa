@@ -1,0 +1,26 @@
+@import "../base/colors";
+@import "../utils/mixins";
+
+.kasa-logement-caroussel{
+    @include rang;  
+    height:415px;
+    background-color: $color-quatre;
+    border-radius: 20px
+  }
+  
+  .kasa-arrow{
+    @include rang;
+    justify-content: space-around;
+    width: auto;
+  }
+  .kasa-arrow-left{
+    background-image: url("/asset/images/arrow_back.png") ;
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: transparent;
+  }
+  .kasa-arrow-right{
+    
+    width: 100px;
+  }

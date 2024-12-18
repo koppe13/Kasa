@@ -1,9 +1,8 @@
-import Header from "../components/Header/header";
+import Header from "../components/Main/header";
 import Mainhome from "../components/mainhome";
-import Footer from "../components/footer";
-import Logement from "../components/logement";
-import Mainpropos from "../components/mainpropos";
-import Appartement from "../components/Appartement";
+import Footer from "../components/Main/footer";
+
+
 
 
 export function Home () {

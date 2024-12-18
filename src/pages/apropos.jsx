@@ -1,6 +1,6 @@
-import Header from "../components/Header/header";
+import Header from "../components/Main/header";
 import Mainpropos from "../components/mainpropos";
-import Footer from "../components/footer";
+import Footer from "../components/Main/footer";
 
 export function Apropos () {
 

@@ -1,0 +1,101 @@
+@import "../base/colors";
+@import "../utils/mixins";
+
+.kasa-affichage{
+    @include marge;
+  }
+  
+  .kasa-log{
+    display: flex;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+  }
+  
+  .kasa-log-title{
+    margin-top: 20px;
+    @include rang;
+    justify-content: space-between;
+    
+  }
+  .Kasa-tag-presentation{
+    margin-top: 40px;
+    @include rang;
+    gap: 10px;
+    justify-content: start;
+  }
+  
+  .kasa-img-user{
+    border-radius: 50%;
+    width: 64px;
+  }
+  
+  .kasa-log-h{
+    font-size: 36px;
+    color: $color-trois;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .kasa-log-a{
+    font-size: 18px;
+    color: $color-deux;
+    margin-top: 10px;
+  }
+  
+  .kasa-tag{
+    @include rang;
+    @include typo;
+    font-size: 14px;
+    width:fit-content;
+    min-width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    color: $color-un;
+    background-color: $color-trois;
+    justify-content: center;
+  }
+  .kasa-tag-text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .kasa-log-present{
+   width: 196px;
+  
+  }
+  .kasa-log-user{
+    @include rang;
+    justify-content:flex-end;
+    height:77px;
+  }
+  
+  .kasa-user-name{
+    @include typo;
+    color: $color-trois;
+    display: flex;
+    justify-content: flex-end;
+    width: 95px;
+    text-align: end;
+  }
+  
+  .kasa-img-user{
+    margin-left: 10px;;
+  }
+  
+  .kasa-star{
+    width: 16%;
+  }
+
+  .kasa-star-ligne {
+    margin-top: 20px;
+    @include rang;
+    justify-content: space-around;
+    width: 200px;
+   }
+
+  .kasa-log-valeurs{
+    margin-top: 30px;
+    @include rang;
+    width: 100%;
+    
+  }

@@ -1,0 +1,44 @@
+@import "../base/colors";
+@import "../utils/mixins";
+
+
+
+/* Mainhome ----------------------------------- */
+.kasa-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 223px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.6) url("/asset/images/Image1.png");
+  background-size:cover;
+  background-position:center;
+  z-index: 0;
+  box-shadow: (0 4px 4px #00000040);
+  background-blend-mode: darken;
+     
+}
+
+.kasa-banner-text {
+  color: $color-un;
+  @include typo;
+  filter:none;
+  font-size: 48px;
+  font-weight: 700;
+  width: 56%;
+  z-index: 2;
+}
+
+.kasa-main {
+  @include marge;
+  
+  
+}
+.kasa-main-grid {
+  display: flex;
+  margin-top: 40px;
+  background-color: $color-quatre;
+  border-radius: 25px;
+
+}

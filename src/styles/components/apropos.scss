@@ -1,0 +1,28 @@
+@import "../base/colors";
+@import "../utils/mixins";
+
+.kasa-propos {
+    width: 100%;
+    height: auto;
+    
+  }
+  .kasa-propos-banner {
+    @include marge;
+    height: 223px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.3) url("/asset/images/kalen1.png");
+    background-size:cover;
+    background-position:center;
+    background-blend-mode: darken;
+       
+  }
+  .kasa-propos-valeurs{
+    @include colonne;
+    justify-content: center;
+    margin-top: 40px;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap:30px;
+  
+  }

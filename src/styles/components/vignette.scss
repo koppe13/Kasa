@@ -1,0 +1,46 @@
+@import "../base/colors";
+@import "../utils/mixins";
+
+.kasa-vignette{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+  .kasa-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-trois;
+    border-radius: 10px;
+    text-decoration: none;
+    max-width: 340px;
+    min-width: 200px;
+  }
+  .kasa-image {
+    width: 100%;
+    height: 80%;
+    border-radius:  (10px 10px 0 0);
+    object-fit: cover;
+  }
+  .kasa-card-content{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    text-decoration: none;
+  }
+  .kasa-card-text{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: $color-un;
+    @include typo;
+    font-size: 18px;
+    text-decoration: none;
+    max-width: 260px;
+    
+    
+  }

@@ -1,11 +1,9 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import './App.css';
-import './styles/components.scss';
-import './styles/valderoulant.scss';
+import './styles/main.scss'
 import Main404 from "./components/main404.jsx";
 import {Home} from "./pages/home";
-import {Header} from './components/Header/header.jsx';
+import {Header} from './components/Main/header.jsx';
 import {Apropos} from "./pages/apropos.jsx";
 import ProfileContainer from "./components/logementcontainer/index.jsx";
 
