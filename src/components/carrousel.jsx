@@ -30,18 +30,20 @@ const Carrousel = ({namealt}) => {
 
   return (
     <div className="kasa-logement-caroussel" >
-        <div className="kasa-arrow">
-      <button onClick={handlePrev} className="kasa-arrow-left" src={Arrowl}></button>
+        
+      <img onClick={handlePrev} className="kasa-arrow-left" src={Arrowl} alt="fleche droite"></img>
       
         <img
           src={picture.pictures[currentIndex]}
           alt={`${namealt} ${currentIndex + 1}`}
           className="kasa-log"
         />
-        <a className="carrousel-compteur">{currentIndex +1}/{picture.pictures.length}</a> 
-      </div>
-      <button onClick={handleNext} className="kasa-arrow-right">{Arrowr}</button>
+         
+      
+      <img onClick={handleNext} className="kasa-arrow-right" src={Arrowr} alt="fleche droite"></img>
+      <a className="carrousel-compteur">{currentIndex +1}/{picture.pictures.length}</a>
     </div>
+    
   );
 };
 
