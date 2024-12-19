@@ -10,11 +10,14 @@ const Valderoulant = ({nameVariable}) => {
 
 
   const [isOpen, setIsOpen] = useState(false);
-
+  const [isRotated, setIsRotated] = useState(false);
   const toggleCollapse = () => {
     setIsOpen(!isOpen); // Alterne l'état d'ouverture
-    console.log("toggle collapse");
-  };
+    setIsRotated(!isRotated);
+  }
+  
+ 
+  
 
   
     return (        
@@ -22,7 +25,7 @@ const Valderoulant = ({nameVariable}) => {
           <div className="kasa-valderoulant">
           <a href="/">{nameVariable}</a>
                 <button className="button" onClick={toggleCollapse}>
-                    <img  src={chevron} alt={'chervon anime'}></img>
+                    <img className={`button ${isRotated ? "larotation" : ""}`} src={chevron} alt={'chervon anime'}></img>
                 </button>
           </div>
           <div className={`collapse-content ${isOpen ? "open" : ""}`}>
@@ -32,7 +35,7 @@ const Valderoulant = ({nameVariable}) => {
           </div>
         </div>
     )
-}
 
+  };
 
 export default Valderoulant

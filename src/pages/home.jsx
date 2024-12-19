@@ -1,20 +1,28 @@
-import Header from "../components/Main/header";
-import Mainhome from "../components/mainhome";
-import Footer from "../components/Main/footer";
+import Vignette from "../components/vignette";
+
+
+function Home () {
+   
+        return (
+                    
+      
+                    <div className="kasa-main">
+                        <div className="kasa-banner">
+            
+                        <h1  className="kasa-banner-text">Chez vous, partout et ailleurs</h1>
+
+                        </div>
+                        <div className="kasa-main-grid">
+                        < Vignette />
+                        </div>  
+                    </div>
+                
+        );
+    
+    
+    
+    }
 
 
 
-
-export function Home () {
-
-  return (
-          <div>
-              < Header />
-              < Mainhome />
-              < Footer />
-          </div>
-          
-
-  )
-}
-
+   export default Home

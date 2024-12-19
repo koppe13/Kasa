@@ -1,16 +1,29 @@
-import Header from "../components/Main/header";
-import Mainpropos from "../components/mainpropos";
-import Footer from "../components/Main/footer";
+import Valderoulant from "../components/valderoulant"
 
-export function Apropos () {
 
-  return (
-          <div>
-              < Header />
-              < Mainpropos />
-              < Footer />
-          </div>
-          
 
-  )
+function Apropos () {
+
+    return (
+        <div className="kasa-propos">
+            
+            <div className="kasa-propos-banner"></div>
+            <div className="kasa-propos-valeurs">
+                <Valderoulant nameVariable="test1"/>
+                <Valderoulant nameVariable="test2"/>
+                <Valderoulant nameVariable="test3"/>
+                <Valderoulant nameVariable="test4"/>
+                
+            </div>
+                    
+            
+        </div>
+      );
+
+
+
+
+
 }
+
+export default Apropos
