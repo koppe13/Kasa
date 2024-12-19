@@ -2,8 +2,6 @@
 @import "../utils/mixins";
 
 .kasa-logement-caroussel{
-    display: flex;
-    align-items: center;
     @include rang;  
     height:415px;
     background-color: $color-quatre;
@@ -21,15 +19,17 @@
   .kasa-arrow-left{
     position: absolute;
     left:7%;
+    top:35%;
   }
   .kasa-arrow-right{
     position: absolute;
     right:7%;
+    top:35%;
     
   }
   .carrousel-compteur{
     position:absolute;
     right:48%;
-    top: 40%;
+    top: 60%;
     color:$color-un;
   }

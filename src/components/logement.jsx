@@ -24,7 +24,6 @@ function Logement () {
                 <div className="kasa-log-presentation">
                         <h3 className="kasa-log-h">{appart.title}</h3>
                         <a className="kasa-log-a">{appart.location}</a>
-                
                         <div className="Kasa-tag-presentation">
                         {appart.tags.map((tag) => {
                         return  <div className="kasa-tag"><a className="kasa-tag-text">{tag}</a></div>

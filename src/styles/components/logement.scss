@@ -15,11 +15,13 @@
   .kasa-log-title{
     margin-top: 20px;
     @include rang;
-    justify-content: space-between;
+    @include typo;
+    height:auto;
+    
     
   }
   .Kasa-tag-presentation{
-    margin-top: 40px;
+    margin-top: 30px;
     @include rang;
     gap: 10px;
     justify-content: start;
@@ -33,18 +35,18 @@
   .kasa-log-h{
     font-size: 36px;
     color: $color-trois;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0;
   }
   .kasa-log-a{
     font-size: 18px;
     color: $color-deux;
-    margin-top: 10px;
+    margin-top:20px;
+    
   }
   
   .kasa-tag{
     @include rang;
-    @include typo;
     font-size: 14px;
     width:fit-content;
     min-width: 115px;
@@ -95,7 +97,7 @@
 
   .kasa-log-valeurs{
     margin-top: 30px;
-    @include rang;
-    width: 100%;
-    
+    display: flex;
+    align-items:normal;
+    justify-content: space-between;
   }
