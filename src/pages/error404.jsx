@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 
 
-function Page404 () {
+function Error404 () {
 
     return (
         <div className="kasa-error">
@@ -20,4 +20,4 @@ function Page404 () {
 
 }
 
-export default Page404
+export default Error404

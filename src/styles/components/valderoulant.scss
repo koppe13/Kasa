@@ -1,6 +1,17 @@
 @import "../base/colors";
 @import "../utils/mixins";
 
+@keyframes rotation {
+  from {
+      transform: rotate(0);
+  }
+  to {
+      transform: rotate(0.5turn);
+      
+  }
+}
+
+
 #kasa-val2 {
   display: flex;
   justify-content: space-between;
@@ -38,21 +49,28 @@
     background-color:transparent;
     border: none;
     cursor:pointer;
-    transition: 300ms;
-    max-height: 200px;
-        &:active {
-        transform:rotate(0.5turn);
-  }}
+    transition: rotation 300ms;
+          &.larotation {
+            animation: rotation 300ms forwards;
+            
+             }
+
+             &.rotation {
+              
+          }
+        }
+   
   
   .collapse-content {
     max-height: 0;
-    max-width: 100%;
     overflow: hidden;
+    position:fixed;
     transition: max-height 0.3s ease, padding 0.3s ease;
     background-color: #f0f0f0;
     padding: 0;
     border-radius: 5px;
         &.open {
-        max-height: 100%;
+        width:auto;
+        max-height:max-content;
         padding: 10px;
     }}
