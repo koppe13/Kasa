@@ -7,7 +7,7 @@ function Vignette () {
                 <div className="kasa-vignette">
                   {data.map((location) => (
 
-                    <a  href={`/logement/${location.id}`}>
+                    <a  className="kasa-card-typo" href={`/logement/${location.id}`}>
                           <article className="kasa-card" key={location.id}>
                             <img className="kasa-image" src={location.cover} alt={location.title}></img>
                           <div className="kasa-card-content">

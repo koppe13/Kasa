@@ -8,7 +8,8 @@
     border-radius: 20px;
     justify-content: space-around;
     width: auto;
-    object-fit: cover
+    object-fit: cover;
+    position: relative;
   }
   
   .kasa-log{
@@ -17,19 +18,22 @@
     border-radius: 20px;
   }
   .kasa-arrow-left{
+    cursor:pointer;
     position: absolute;
-    left:7%;
-    top:35%;
+    left:2px;
+    top:160px;
+       
   }
   .kasa-arrow-right{
+    cursor:pointer;
     position: absolute;
-    right:7%;
-    top:35%;
+    right:2px;
+    top:160px;
     
   }
   .carrousel-compteur{
     position:absolute;
-    right:48%;
-    top: 60%;
+    right:49%;
+    bottom: 10px;
     color:$color-un;
   }

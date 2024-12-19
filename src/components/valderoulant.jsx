@@ -25,7 +25,7 @@ const Valderoulant = ({nameVariable}) => {
           <div className="kasa-valderoulant">
           <a >{nameVariable}</a>
                 <button className="button" onClick={toggleCollapse}>
-                    <img className={`button ${isRotated ? "larotation" : ""}`} src={chevron} alt={'chervon anime'}></img>
+                    <img className={`button ${isRotated ? "ouvre" : "ferme"}`} src={chevron} alt={'chervon anime'}></img>
                 </button>
           </div>
           <div className={`collapse-content ${isOpen ? "open" : ""}`}>

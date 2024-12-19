@@ -1,13 +1,20 @@
 @import "../base/colors";
 @import "../utils/mixins";
 
-@keyframes rotation {
+@keyframes ouvert {
   from {
       transform: rotate(0);
   }
   to {
       transform: rotate(0.5turn);
-      
+  }
+}
+@keyframes fermer {
+  from {
+      transform: rotate(0.5turn);
+  }
+  to {
+      transform: rotate(0);
   }
 }
 
@@ -51,14 +58,21 @@
     border: none;
     cursor:pointer;
     transition: rotation 300ms;
-          &.larotation {
-            animation: rotation 300ms forwards;
-            
-             }
-
-           
-        }
-   
+          &.ouvre {
+            animation: ouvert 300ms forwards;
+            }
+  
+       }
+  .button {
+  background-color:transparent;
+  border: none;
+  cursor:pointer;
+  transition: rotation 300ms;
+          &.ferme {
+          animation: fermer 300ms forwards;
+          }
+      
+ } 
   
   .collapse-content {
     max-height: 0;
@@ -68,6 +82,7 @@
     background-color: #f0f0f0;
     padding: 0;
     border-radius: 5px;
+    
         &.open {
         width:auto;
         max-height:max-content;
