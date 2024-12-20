@@ -18,18 +18,6 @@
   }
 }
 
-
-#kasa-val2 {
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-.kasa-val{
-  width: 46%;
- 
-     }
-
 .kasa-valderoulant{
     @include typo;
     @include rang;
@@ -44,11 +32,6 @@
     
   }
 
-  #kasa-val2 .kasa-log-valeurs .kasa-valderoulant{
-    justify-content: space-between;
-    width:80%
-  
-  }
   .collapse-text{
     list-style-type: none;
     
@@ -73,7 +56,10 @@
           }
       
  } 
-  
+ .star {
+  fill: $color-trois; 
+ }
+
   .collapse-content {
     max-height: 0;
     overflow: hidden;

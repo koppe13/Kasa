@@ -7,12 +7,10 @@ import star from "../asset/images/Vector.png"
 import { useParams } from 'react-router-dom'
 import data from "../location.json"
 import Carrousel from "../components/carrousel.jsx"
-
+import Rating from "../components/rating.jsx"
 
 function Logement () {
     const { id } = useParams() 
-    const Equipements = "Equipements"
-
     const appart = data.find((loge) => loge.id === id )
     
        
@@ -39,17 +37,20 @@ function Logement () {
                 </div>
                 <div className="kasa-star">
                     <div className="kasa-star-ligne">
+                    
                         
-                        <img src={star}></img>
-                          
+                        <Rating classement={appart.rating}/>
+                       
                     </div>
                 </div>
             </div>
            
         </div>
         <div className="kasa-log-valeurs">
-            <Valderoulant nameVariable="Equipements1" />
-            <Valderoulant nameVariable="Equipements2"/>
+            <Valderoulant nameVariable="Description" Variable={appart.description} />
+            
+            <Valderoulant nameVariable="Equipements" Variable={appart.equipments}/>
+           
         </div>
     
     </div>

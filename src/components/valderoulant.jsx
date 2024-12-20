@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import data from "../location.json"
 import { useParams } from 'react-router-dom'
 
-const Valderoulant = ({nameVariable}) => {
+const Valderoulant = ({nameVariable, Variable}) => {
 
     const { id } = useParams()
     const appart = data.find((loge) => loge.id === id )
@@ -16,22 +16,18 @@ const Valderoulant = ({nameVariable}) => {
     setIsRotated(!isRotated);
   }
   
- 
-  
-
-  
-    return (        
+     return (        
         <div className="kasa-val">
           <div className="kasa-valderoulant">
-          <a >{nameVariable}</a>
+          <a>{nameVariable}</a>
                 <button className="button" onClick={toggleCollapse}>
                     <img className={`button ${isRotated ? "ouvre" : "ferme"}`} src={chevron} alt={'chervon anime'}></img>
                 </button>
           </div>
           <div className={`collapse-content ${isOpen ? "open" : ""}`}>
-          {appart?.equipments.map((equipments) => {
-           return <li className="collapse-text">{equipments}</li>
-          })}
+          
+           <li className="collapse-text">{Variable}</li>
+          
           </div>
         </div>
     )

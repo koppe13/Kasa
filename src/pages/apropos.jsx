@@ -1,22 +1,19 @@
 import Valderoulant from "../components/valderoulant"
+import aboutList from "../aboutlist";
 
 
 
 function Apropos () {
-
+    
     return (
         <div className="kasa-propos">
             
             <div className="kasa-propos-banner"></div>
             <div className="kasa-propos-valeurs">
-                <Valderoulant nameVariable="test1"/>
-                <Valderoulant nameVariable="test2"/>
-                <Valderoulant nameVariable="test3"/>
-                <Valderoulant nameVariable="test4"/>
-                
+            {aboutList.map((variable) => {
+             return   <Valderoulant nameVariable={variable.title} Variable={variable.content}/>
+            })}
             </div>
-                    
-            
         </div>
       );
 
