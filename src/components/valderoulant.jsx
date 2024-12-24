@@ -7,7 +7,7 @@ const Valderoulant = ({nameVariable, Variable}) => {
 
     const { id } = useParams()
     const appart = data.find((loge) => loge.id === id )
-
+  
 
   const [isOpen, setIsOpen] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
@@ -26,7 +26,7 @@ const Valderoulant = ({nameVariable, Variable}) => {
           </div>
           <div className={`collapse-content ${isOpen ? "open" : ""}`}>
           
-           <li className="collapse-text">{Variable}</li>
+             <li className="collapse-text">{Variable}</li>
           
           </div>
         </div>

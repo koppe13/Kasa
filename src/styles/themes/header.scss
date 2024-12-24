@@ -17,13 +17,8 @@
   }
   .kasa-nav-lien {
     display: flex;
-    max-width: 450px;
-    width: 25%;
-    min-width: 233px;
-    align-items: end;
     @include typo;
     font-size: 24px;
-    justify-content: space-between;
     text-align: end;
     gap: 10%
   }
@@ -37,4 +32,22 @@
   }
   .nav:hover {
     text-decoration:underline;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .kasa-nav-titre {
+      height: 46px;
+    }
+    .nav {
+      width:55px;
+      min-width: 55px;
+      height: 10px;
+    }
+    .kasa-nav-lien {
+      font-size: 12px;
+      justify-content: space-between;
+      text-align: end;
+      
+    }
+
   }

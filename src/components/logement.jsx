@@ -1,9 +1,5 @@
 
-import Arrowl from "../asset/images/arrow_back.png";
-import Arrowr from "../asset/images/arrow_forward.png";
-import Host from "../asset/images/Host.png";
 import Valderoulant from "./valderoulant.jsx"
-import star from "../asset/images/Vector.png"
 import { useParams } from 'react-router-dom'
 import data from "../location.json"
 import Carrousel from "../components/carrousel.jsx"
@@ -49,8 +45,9 @@ function Logement () {
         <div className="kasa-log-valeurs">
             <Valderoulant nameVariable="Description" Variable={appart.description} />
             
-            <Valderoulant nameVariable="Equipements" Variable={appart.equipments}/>
+            <Valderoulant nameVariable="Equipements" Variable={appart.equipments.map((Variable) => {return <li>{Variable}</li>} )}/>
            
+            
         </div>
     
     </div>

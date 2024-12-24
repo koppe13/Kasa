@@ -32,10 +32,7 @@
     
   }
 
-  .collapse-text{
-    list-style-type: none;
-    
-  }
+  
   .button {
     background-color:transparent;
     border: none;
@@ -61,6 +58,7 @@
  }
 
   .collapse-content {
+    
     max-height: 0;
     overflow: hidden;
     position:static;
@@ -70,7 +68,13 @@
     border-radius: 5px;
     
         &.open {
+        @include typo;
         width:auto;
         max-height:max-content;
         padding: 10px;
+        
+        }
+        .collapse-text{
+        list-style-type: none;
+        
     }}
