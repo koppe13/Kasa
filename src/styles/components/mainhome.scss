@@ -45,9 +45,11 @@
 @media only screen and (max-width: 600px) {
 
   .kasa-main {
-    margin:2%;
+    margin:0;
   }
   .kasa-banner {
+    margin-left: 2%;
+    margin-right: 2%;
     max-height: 110px;
     border-radius: 10px;
     box-shadow: none;

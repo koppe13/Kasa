@@ -35,6 +35,9 @@
   }
 
   @media only screen and (max-width: 600px) {
+    .kasa-nav {
+     height: 86px;      
+  }
     .kasa-nav-titre {
       height: 46px;
     }

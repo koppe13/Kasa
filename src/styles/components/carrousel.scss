@@ -37,3 +37,22 @@
     bottom: 10px;
     color:$color-un;
   }
+  @media only screen and (max-width: 600px) {
+    .kasa-logement-caroussel{
+        
+      width:345px;
+      border-radius: 10px;
+    }
+    .kasa-log{
+      border-radius: 10px;
+    }
+    .kasa-arrow-left{
+      width:34px;
+      top:180px;
+    }
+    .kasa-arrow-right{
+      width:34px;
+      top:180px;
+      
+    }
+  }

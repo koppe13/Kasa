@@ -61,13 +61,15 @@
   }
   
   .kasa-log-present{
-   width: 196px;
-  
+    display: flex;
+    flex-wrap: wrap;
+    width: 196px;
+    justify-content: flex-end;
   }
   .kasa-log-user{
     @include rang;
-    justify-content:flex-end;
     height:77px;
+    
   }
   
   .kasa-user-name{
@@ -82,17 +84,15 @@
   .kasa-img-user{
     margin-left: 10px;;
   }
-  
-  .kasa-star{
-    width: 16%;
+  .notation{
+    display: flex;
+    width:100%;
+    gap:10px;
+    justify-content: flex-end;
   }
-
   .kasa-star-ligne {
     margin-top: 20px;
-    @include rang;
-    justify-content: space-around;
-    width: 200px;
-   }
+ }
 
   .kasa-log-valeurs{
     margin-top: 30px;
@@ -102,4 +102,44 @@
   }
   .kasa-log-valeurs .kasa-val {
     width: 45%;
+  }
+  @media only screen and (max-width: 600px) {
+    .kasa-affichage {
+      margin-left: 2%;
+      margin-right: 2%;
+  }    
+    .kasa-log-title{
+      flex-wrap: wrap;
+    }
+    .kasa-log-h{
+      font-size: 18px;
+      max-height: 335px;
+    }
+    .kasa-log-a{
+      font-size: 14px;
+       
+    }
+    .kasa-tag{
+      font-size: 10px;
+      min-width: 84px;
+      height: 18px;
+      border-radius: 5px;
+    }
+    .kasa-log-present{
+      display: flex;
+        width: 345px;
+        flex-direction: row-reverse;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .kasa-star-ligne {
+      margin-top: 20px;
+      width: 98px;
+     }
+     .kasa-log-user{
+      width: 135px;
+      height:33px;
+    }
+     
+
   }
