@@ -12,12 +12,12 @@ const Valderoulant = ({nameVariable, Variable}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
   const toggleCollapse = () => {
-    setIsOpen(!isOpen); // Alterne l'état d'ouverture
-    setIsRotated(!isRotated);
+    setIsOpen(!isOpen); // Alterne l'état d'ouverture du collapse
+    setIsRotated(!isRotated); //idem pour la rotation de la fleche
   }
   
      return (        
-        <div className="kasa-val">
+        <div className="kasa-val" >
           <div className="kasa-valderoulant">
           <a>{nameVariable}</a>
                 <button className="button" onClick={toggleCollapse}>
