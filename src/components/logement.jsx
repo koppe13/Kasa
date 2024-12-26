@@ -7,13 +7,15 @@ import Rating from "../components/rating.jsx"
 
 function Logement () {
     const { id } = useParams() 
-    const appart = data.find((loge) => loge.id === id )
-    
-       
+    const appart = data.find((loge) => loge.id === id)
+
+
+   if(appart != null) {
     return (
         
     <div className="kasa-affichage" > 
             < Carrousel namealt={appart.title}/>
+            
             <div className="kasa-log-title">
                 <div className="kasa-log-presentation">
                         <h3 className="kasa-log-h">{appart.title}</h3>
@@ -31,7 +33,7 @@ function Logement () {
                     </div>
                     <img className="kasa-img-user" src={appart.host.picture}></img>    
                 </div>
-                
+
                     <div className="kasa-star-ligne">
                         <Rating classement={appart.rating}/>
                     </div>
@@ -48,8 +50,13 @@ function Logement () {
         </div>
     
     </div>
-    )};
-      
+    )
+} else {
+    
+}
+};
+
+    
 
 
 

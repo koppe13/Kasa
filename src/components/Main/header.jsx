@@ -12,7 +12,7 @@ return (
         <nav className="kasa-nav-lien">
           
             <Link to='/' className="nav">Acceuil</Link>
-            <Link to='component/mainpropos' className="nav">A propos</Link> 
+            <Link to='/mainpropos' className="nav">A propos</Link> 
              
         </nav>
     </div>
