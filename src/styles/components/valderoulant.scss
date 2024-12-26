@@ -21,7 +21,6 @@
 .kasa-valderoulant{
     @include typo;
     @include rang;
-    justify-content: space-between;
     background-color: $color-trois;
     font-weight: bold;
     color: $color-un;
@@ -74,4 +73,19 @@
         .collapse-text{
         list-style-type: none;
         
-    }}
+    }
+   
+  }
+  @media only screen and (max-width: 600px) {
+
+    .kasa-valderoulant{
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .button {
+      width: 22px;
+    }
+  }

@@ -31,14 +31,11 @@ function Logement () {
                     </div>
                     <img className="kasa-img-user" src={appart.host.picture}></img>    
                 </div>
-                <div className="kasa-star">
+                
                     <div className="kasa-star-ligne">
-                    
-                        
                         <Rating classement={appart.rating}/>
-                       
                     </div>
-                </div>
+                
             </div>
            
         </div>

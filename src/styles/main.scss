@@ -9,3 +9,7 @@
 @import './themes/header.scss';
 @import './themes/footer.scss';
 @import './utils/mixins.scss';
+
+body{
+    margin:0;
+}
