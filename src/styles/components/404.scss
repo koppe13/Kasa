@@ -29,3 +29,12 @@
     font-size: 18px;
     color: $color-deux;
   }
+  @media only screen and (max-width: 600px) {
+    .kasa-error-number{
+      font-size: 96px;
+    }
+    .kasa-error-text {
+      font-size: 18px;
+      margin-left: 30px;
+    }
+  }

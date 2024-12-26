@@ -33,26 +33,27 @@
   }
   .carrousel-compteur{
     position:absolute;
-    right:49%;
+    right:46%;
     bottom: 10px;
     color:$color-un;
   }
   @media only screen and (max-width: 600px) {
     .kasa-logement-caroussel{
-        
+      max-height: 255px;  
       width:100%;
       border-radius: 10px;
     }
     .kasa-log{
+      max-height: 255px;
       border-radius: 10px;
     }
     .kasa-arrow-left{
       width:34px;
-      top:180px;
+      top:110px;
     }
     .kasa-arrow-right{
       width:34px;
-      top:180px;
+      top:110px;
       
     }
   }
