@@ -24,7 +24,7 @@ const Valderoulant = ({nameVariable, Variable}) => {
                     <img className={`button ${isRotated ? "ouvre" : "ferme"}`} src={chevron} alt={'chervon anime'}></img>
                 </button>
           </div>
-          <div className={`collapse-content ${isOpen ? "open" : ""}`}>
+          <div className={`collapse-content ${isOpen ? "open" : "closed"}`}>
           
              <li className="collapse-text">{Variable}</li>
           

@@ -43,10 +43,11 @@
   
        }
   .button {
-  background-color:transparent;
-  border: none;
-  cursor:pointer;
-  transition: rotation 300ms;
+    padding-top: 2px;
+    background-color:transparent;
+    border: none;
+    cursor:pointer;
+    transition: rotation 300ms;
           &.ferme {
           animation: fermer 300ms forwards;
           }
@@ -57,7 +58,6 @@
     
     max-height: 0;
     overflow: hidden;
-    position:static;
     transition: max-height 0.3s ease, padding 0.3s ease;
     background-color: #f0f0f0;
     padding: 0;
@@ -74,6 +74,17 @@
         list-style-type: none;
         
     }
+    //faire le meme que rotation
+    //.hidden-text {
+    //  transform: translateY(-100%);
+    //  opacity: 0;
+    //  transition: transform 0.5s ease, opacity 0.5s ease;
+    //}
+    
+    //.hidden-text.visible {
+    //  transform: translateY(0);
+    //  opacity: 1;
+    //}
    
   }
   @media only screen and (max-width: 600px) {
