@@ -1,3 +1,6 @@
+import { Link } from "react-router";
+
+
 <CardsContainer>
     {location?.map((logement) => (
         <Link key={`appart-${logement.id}`} to={`/logement/${logement.id}`}>

@@ -11,7 +11,7 @@ function Apropos () {
             <div className="kasa-propos-banner"></div>
             <div className="kasa-propos-valeurs">
             {aboutList.map((variable) => {
-             return   <Valderoulant key={variable.id} nameVariable={variable.title} Variable={variable.content}/>
+             return <Valderoulant nameVariable={variable.title} Variable={variable.content}/>
             })}
             </div>
         </div>
