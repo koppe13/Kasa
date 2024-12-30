@@ -22,8 +22,8 @@ function Logement () {
                         <h3 className="kasa-log-h">{appart.title}</h3>
                         <a className="kasa-log-a">{appart.location}</a>
                         <div className="Kasa-tag-presentation">
-                        {appart.tags.map((tag) => {
-                        return  <div key={'${tag}-${id}'} className="kasa-tag"><a className="kasa-tag-text">{tag}</a></div>
+                        {appart.tags.map((tag, index) => {
+                        return  <div key={index} className="kasa-tag"><a className="kasa-tag-text">{tag}</a></div>
                         })}
                         </div>
                 </div>

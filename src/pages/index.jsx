@@ -2,8 +2,8 @@ import { Link } from "react-router";
 
 
 <CardsContainer>
-    {location?.map((logement) => (
-        <Link key={`appart-${logement.id}`} to={`/logement/${logement.id}`}>
+    {location?.map((logement, index) => (
+        <Link key={index} to={`/logement/${logement.id}`}>
             <Card
                 title={logement.title}
                 pictures={logement.pictures}
