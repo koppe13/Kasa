@@ -1,5 +1,5 @@
 import Valderoulant from "../components/valderoulant"
-import aboutList from "../aboutlist";
+import aboutList from "../aboutlist.json";
 
 
 
