@@ -1,6 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import reportWebVitals from './reportWebVitals';
 import './styles/main.scss'
 import Home from './pages/home'
 import Header from './components/Main/header';
@@ -8,9 +10,10 @@ import Footer from './components/Main/footer';
 import Error404 from './pages/error404.jsx';
 import Apropos from "./pages/apropos.jsx";
 import ProfileContainer from "./components/logementcontainer/index.jsx";
- 
-ReactDOM.render(
-    <React.StrictMode>
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
         <Router>
             <Header />
                 <Routes>
@@ -22,7 +25,9 @@ ReactDOM.render(
             <Footer />
         </Router>
     </React.StrictMode>,
-document.getElementById('root')
-)
+);
 
-
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

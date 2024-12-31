@@ -1,15 +1,10 @@
 import chevron from "../asset/images/arrow.png"
 import React, { useState } from "react";
-import data from "../location.json"
-import { useParams } from 'react-router-dom'
 
-const Valderoulant = ({nameVariable, Variable}) => {
 
-    const { id } = useParams()
-    const appart = data.find((loge) => loge.id === id )
-  
+const Collapse = ({nameVariable, Variable, id}) => {
 
-  const [isOpen, setIsOpen] = useState(false);
+     const [isOpen, setIsOpen] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
   const toggleCollapse = () => {
     setIsOpen(!isOpen); // Alterne l'état d'ouverture du collapse
@@ -18,13 +13,13 @@ const Valderoulant = ({nameVariable, Variable}) => {
   
      return (        
         <div className="kasa-val" >
-          <div className="kasa-valderoulant">
-          <a>{nameVariable}</a>
-                <button className="button" onClick={toggleCollapse}>
+          <div key={{id}? {id}:''} className="kasa-collapse">
+          <p >{nameVariable}</p>
+                    <button className="button" onClick={toggleCollapse}>
                     <img className={`button ${isRotated ? "ouvre" : "ferme"}`} src={chevron} alt={'chervon anime'}></img>
                 </button>
           </div>
-          <div className={`collapse-content ${isOpen ? "open" : "closed"}`}>
+          <div className={`collapse-content ${isOpen ? "open" : ""}`}>
           
              <li className="collapse-text">{Variable}</li>
           
@@ -34,4 +29,4 @@ const Valderoulant = ({nameVariable, Variable}) => {
 
   };
 
-export default Valderoulant
+export default Collapse

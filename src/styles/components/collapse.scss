@@ -18,7 +18,7 @@
   }
 }
 
-.kasa-valderoulant{
+.kasa-collapse{
     @include typo;
     @include rang;
     background-color: $color-trois;
@@ -89,7 +89,7 @@
   }
   @media only screen and (max-width: 600px) {
 
-    .kasa-valderoulant{
+    .kasa-collapse{
       padding-left: 10px;
       padding-right: 10px;
       border-radius: 5px;

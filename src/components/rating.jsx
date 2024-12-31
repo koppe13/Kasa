@@ -9,10 +9,10 @@ const Rating = ({classement}) => {
 for (let star=1 ;star <= 5; star++ ) {
     if(star <= classement){
        Star.push(
-            <img className='star' src={vstar}></img>
+            <img key={star} className='star' src={vstar} alt="notation positive"></img>
     ) }else {
         Star.push(
-            <img className='star' src={gstar}></img>
+            <img key={star} className='star' src={gstar} alt="notation negative"></img>
         )
     }
 
