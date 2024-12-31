@@ -2,7 +2,7 @@ import chevron from "../asset/images/arrow.png"
 import React, { useState } from "react";
 
 
-const Collapse = ({nameVariable, Variable, id}) => {
+const Collapse = ({nameVariable, Variable}) => {
 
      const [isOpen, setIsOpen] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
@@ -13,7 +13,7 @@ const Collapse = ({nameVariable, Variable, id}) => {
   
      return (        
         <div className="kasa-val" >
-          <div key={{id}? {id}:''} className="kasa-collapse">
+          <div className="kasa-collapse">
           <p >{nameVariable}</p>
                     <button className="button" onClick={toggleCollapse}>
                     <img className={`button ${isRotated ? "ouvre" : "ferme"}`} src={chevron} alt={'chervon anime'}></img>

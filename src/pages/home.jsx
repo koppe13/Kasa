@@ -1,5 +1,5 @@
-import Vignette from "../components/vignette";
-
+import Card from "../components/card";
+import Banner from "../components/banner";
 
 function Home () {
    
@@ -7,13 +7,9 @@ function Home () {
                     
       
                     <div className="kasa-main">
-                        <div className="kasa-banner">
-            
-                        <h1  className="kasa-banner-text">Chez vous, partout et ailleurs</h1>
-
-                        </div>
+                        < Banner img="../asset/images/Image1.png"/>
                         <div className="kasa-main-grid">
-                        < Vignette />
+                        < Card />
                         </div>  
                     </div>
                 

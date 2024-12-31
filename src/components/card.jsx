@@ -1,6 +1,6 @@
 import data from "../location.json";
 
-function Vignette () {
+function Card () {
     return (
         
             
@@ -28,4 +28,4 @@ function Vignette () {
 
 }
 
-export default Vignette
+export default Card

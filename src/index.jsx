@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals.js';
 import './styles/main.scss'
-import Home from './pages/home'
-import Header from './components/Main/header';
-import Footer from './components/Main/footer';
+import Home from './pages/home.jsx'
+import Header from './components/Main/header.jsx';
+import Footer from './components/Main/footer.jsx';
 import Error404 from './pages/error404.jsx';
 import Apropos from "./pages/apropos.jsx";
 import ProfileContainer from "./components/logementcontainer/index.jsx";
