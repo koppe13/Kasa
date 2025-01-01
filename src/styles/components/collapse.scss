@@ -65,26 +65,19 @@
     
         &.open {
         @include typo;
-        width:auto;
-        max-height:max-content;
-        padding: 10px;
+          width:auto;
+          max-height:max-content;
+          padding: 10px;
         
         }
-        .collapse-text{
-        list-style-type: none;
+    .collapse-text{
+      list-style-type: none;
         
     }
-    //faire le meme que rotation
-    //.hidden-text {
-    //  transform: translateY(-100%);
-    //  opacity: 0;
-    //  transition: transform 0.5s ease, opacity 0.5s ease;
-    //}
+    p {
+      margin: 0;
+    }
     
-    //.hidden-text.visible {
-    //  transform: translateY(0);
-    //  opacity: 1;
-    //}
    
   }
   @media only screen and (max-width: 600px) {
