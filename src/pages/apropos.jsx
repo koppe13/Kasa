@@ -1,7 +1,7 @@
 import Collapse from "../components/collapse"
 import aboutList from "../aboutlist.json";
-
-
+import Banner from "../components/banner"
+import Imgpropos from "../asset/images/kalen1.png"
 
 
 function Apropos () {
@@ -9,7 +9,7 @@ function Apropos () {
     return (
         <div className="kasa-propos">
             
-            <div className="kasa-propos-banner"></div>
+            < Banner img={Imgpropos}/>
             <div className="kasa-propos-valeurs">
             {aboutList.map((variable, index) => {
              return <div key={index}>  <Collapse nameVariable={variable.title} Variable={variable.content} /> </div>

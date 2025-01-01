@@ -7,7 +7,7 @@ return (
       <div className="kasa-footer-titre">
       <img src={kasaLogo2} alt="logo Kasa noir et blanc"></img>
       </div>
-      <a className="kasa-footer-text">© 2020 Kasa. All rights reserved</a>
+      <p className="kasa-footer-text">© 2020 Kasa. All rights reserved</p>
     </div>
     
   );

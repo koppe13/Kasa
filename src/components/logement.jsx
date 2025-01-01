@@ -4,15 +4,15 @@ import { useParams } from 'react-router-dom'
 import data from "../location.json"
 import Carrousel from "../components/carrousel.jsx"
 import Rating from "../components/rating.jsx"
-import error404 from "../pages/error404.jsx"
+import Error404 from "../pages/error404.jsx"
 
 
 function Logement () {
     const { id } = useParams() 
     const appart = data.find((loge) => loge.id === id)
 
-
-   if(appart != null) {
+    
+   if(appart !== undefined) {
     return (
         
     <div className="kasa-affichage" > 
@@ -54,7 +54,7 @@ function Logement () {
     </div>
     )
 } else {
-    return (<error404.jsx />)
+    return (<div><Error404 /></div>)
 }
 };
 
