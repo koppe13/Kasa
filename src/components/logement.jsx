@@ -1,4 +1,4 @@
-
+ 
 import Collapse from "./collapse.jsx"
 import { useParams } from 'react-router-dom'
 import data from "../location.json"
