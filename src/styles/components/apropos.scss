@@ -4,7 +4,9 @@
 .kasa-propos {
     width: 100%;
     height: auto;
-    
+      & .kasa-banner {
+        box-shadow:none;  
+      }
   }
    
 
