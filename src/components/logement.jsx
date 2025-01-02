@@ -2,7 +2,7 @@
 import Collapse from "./collapse.jsx"
 import { useParams } from 'react-router-dom'
 import data from "../location.json"
-import Carrousel from "../components/carrousel.jsx"
+import Gallery from "../components/gallery.jsx"
 import Rating from "../components/rating.jsx"
 import Error404 from "../pages/error404.jsx"
 
@@ -16,7 +16,7 @@ function Logement () {
     return (
         
     <div className="kasa-affichage" > 
-            <Carrousel namealt={appart.title} />
+            <Gallery namealt={appart.title} />
             
             <div className="kasa-log-title">
                 <div className="kasa-log-presentation">

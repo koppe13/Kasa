@@ -5,7 +5,7 @@ import data from "../location.json"
 import { useParams } from 'react-router-dom' 
 
 
-const Carrousel = ({namealt}) => {
+const Gallery = ({namealt}) => {
     const { id } = useParams() 
 
     const getLogement = data.find((infoLogement) => infoLogement.id === id ) 
@@ -43,4 +43,4 @@ const Carrousel = ({namealt}) => {
   );
 };
 
-export default Carrousel;
+export default Gallery;
