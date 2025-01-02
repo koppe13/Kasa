@@ -16,7 +16,7 @@ function Logement () {
     return (
         
     <div className="kasa-affichage" > 
-            < Carrousel namealt={appart.title}/>
+            <Carrousel namealt={appart.title} />
             
             <div className="kasa-log-title">
                 <div className="kasa-log-presentation">

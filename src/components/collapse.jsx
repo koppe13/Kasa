@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const Collapse = ({nameVariable, Variable}) => {
 
-     const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
   const toggleCollapse = () => {
     setIsOpen(!isOpen); // Alterne l'état d'ouverture du collapse

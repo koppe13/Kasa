@@ -55,7 +55,7 @@
  } 
  
   .collapse-content {
-    
+    @include typo;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
@@ -64,16 +64,16 @@
     border-radius: 5px;
     
         &.open {
-        @include typo;
+        
           width:auto;
           max-height:max-content;
           padding: 10px;
         
         }
-    .collapse-text{
-      list-style-type: none;
-        
-    }
+  .collapse-text {
+    list-style-type: none;
+    margin: 0;
+  }
     p {
       margin: 0;
     }
