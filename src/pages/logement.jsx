@@ -1,10 +1,10 @@
  
-import Collapse from "./collapse.jsx"
+import Collapse from "../components/collapse.jsx"
 import { useParams } from 'react-router-dom'
 import data from "../location.json"
 import Gallery from "../components/gallery.jsx"
 import Rating from "../components/rating.jsx"
-import Error404 from "../pages/error404.jsx"
+import Error404 from "./error404.jsx"
 
 
 function Logement () {

@@ -8,7 +8,7 @@ import Header from './components/Main/header.jsx';
 import Footer from './components/Main/footer.jsx';
 import Error404 from './pages/error404.jsx';
 import Apropos from "./pages/apropos.jsx";
-import ProfileContainer from "./components/logementcontainer/index.jsx";
+import Logement from "./pages/logement.jsx"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +18,7 @@ root.render(
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/mainpropos" element={<Apropos/>}/>
-                    <Route path="logement/:id" element={<ProfileContainer/>} />
+                    <Route path="logement/:id" element={<Logement/>} />
                     <Route path="*" element={<Error404/>} />
                 </Routes>
             <Footer />
