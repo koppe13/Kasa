@@ -1,22 +1,19 @@
-@import './components/mainhome.scss';
-@import './components/logement.scss';
-@import './components/gallery.scss';
-@import './components/collapse.scss';
-@import './components/card.scss';
-@import './components/404.scss';
-@import './components/apropos.scss';
-@import './base/colors.scss';
-@import './themes/header.scss';
-@import './themes/footer.scss';
-@import './utils/mixins.scss';
-@import './components/banner.scss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "../pages/home/home.scss";
+@import "../pages/logement/logement.scss";
+@import "../components/module/Gallery/gallery.scss";
+@import "../components/module/Collapse/collapse.scss";
+@import "../components/module/Card/card.scss";
+@import "../pages/error404/error404.scss";
+@import "../pages/apropos/apropos.scss";
+@import "../styles/base/colors.scss";
+@import "../styles/themes/header.scss";
+@import "../styles/themes/footer.scss";
+@import "../styles/utils/mixins.scss";
+@import "../components/module/Banner/banner.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body{
-  
-        margin: 0;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    
-      
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

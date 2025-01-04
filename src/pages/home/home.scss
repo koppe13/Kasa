@@ -1,7 +1,5 @@
-@import "../base/colors";
-@import "../utils/mixins";
-
-
+@import "../../styles/base/colors.scss";
+@import "../../styles/utils/mixins.scss";
 
 /* Mainhome ----------------------------------- */
 .kasa-main-grid {
@@ -10,24 +8,22 @@
   margin-top: 40px;
   background-color: $color-quatre;
   border-radius: 25px;
-
 }
 
 @media only screen and (max-width: 600px) {
-
   .kasa-main {
-    margin:0;
+    margin: 0;
   }
-  
+
   .kasa-main-grid {
     margin-top: 20px;
     margin-left: 2%;
     margin-right: 2%;
   }
- 
 }
 @media only screen and (max-width: 390px) {
-  .kasa-main-grid { 
-  margin-left: 4%;
-  margin-right: 4%;
-}}
+  .kasa-main-grid {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}

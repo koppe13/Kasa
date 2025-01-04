@@ -1,56 +1,53 @@
 @import "../utils/mixins.scss";
 @import "../base/colors";
 
-
 .kasa-nav {
-    display: flex;
-    height: 150px;
-    align-items: center;
-    @include marge;
-    justify-content: space-between;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  @include marge;
+  justify-content: space-between;
 }
-  
-    .kasa-nav-titre {
-    display: flex;
-    width: 70%;
-    height: 68px;
+
+.kasa-nav-titre {
+  display: flex;
+  width: 70%;
+  height: 68px;
+}
+.kasa-nav-lien {
+  display: flex;
+  @include typo;
+  font-size: 24px;
+  text-align: end;
+  gap: 10%;
+}
+
+.nav {
+  width: 136px;
+  min-width: 108px;
+  height: 34px;
+  color: $color-deux;
+  text-decoration: none;
+}
+.nav:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .kasa-nav {
+    height: 86px;
+  }
+  .kasa-nav-titre {
+    height: 46px;
+  }
+  .nav {
+    width: 55px;
+    min-width: 55px;
+    height: 10px;
   }
   .kasa-nav-lien {
-    display: flex;
-    @include typo;
-    font-size: 24px;
+    font-size: 12px;
+    justify-content: space-between;
     text-align: end;
-    gap: 10%
   }
- 
-  .nav {
-    width:136px;
-    min-width: 108px;
-    height: 34px;
-    color: $color-deux;
-    text-decoration: none;
-  }
-  .nav:hover {
-    text-decoration:underline;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .kasa-nav {
-     height: 86px;      
-  }
-    .kasa-nav-titre {
-      height: 46px;
-    }
-    .nav {
-      width:55px;
-      min-width: 55px;
-      height: 10px;
-    }
-    .kasa-nav-lien {
-      font-size: 12px;
-      justify-content: space-between;
-      text-align: end;
-      
-    }
-
-  }
+}

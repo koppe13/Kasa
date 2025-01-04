@@ -1,0 +1,90 @@
+@import "../../../styles/base/colors.scss";
+@import "../../../styles/utils/mixins.scss";
+
+@keyframes ouvert {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+@keyframes fermer {
+  from {
+    transform: rotate(0.5turn);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.kasa-collapse {
+  @include typo;
+  @include rang;
+  background-color: $color-trois;
+  font-weight: bold;
+  color: $color-un;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  height: 52px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: rotation 300ms;
+  &.ouvre {
+    animation: ouvert 300ms forwards;
+  }
+}
+.button {
+  padding-top: 2px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: rotation 300ms;
+  &.ferme {
+    animation: fermer 300ms forwards;
+  }
+}
+
+.collapse-content {
+  @include typo;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: #f0f0f0;
+  padding: 0;
+  border-radius: 5px;
+
+  &.open {
+    width: auto;
+    max-height: max-content;
+    padding: 10px;
+  }
+  .collapse-text {
+    list-style-type: none;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .kasa-collapse {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .button {
+    width: 22px;
+  }
+  .collapse-text {
+    font-size: 12px;
+  }
+}
+
