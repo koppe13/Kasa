@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import kasaLogo from "../../asset/images/LOGO.png";
+import kasaLogo from "../../asset/images/logo.png";
 
 function Header() {
   return (

@@ -1,4 +1,4 @@
-import kasaLogo2 from "../../asset/images/LOGO_NB.png";
+import kasaLogo2 from "../../asset/images/logon&b.png";
 
 function Footer() {
   return (
