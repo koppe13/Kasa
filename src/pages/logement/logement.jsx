@@ -46,7 +46,9 @@ function Logement() {
           </div>
         </div>
         <div className="kasa-log-valeurs">
-          <Collapse nameVariable="Description" Variable={appart.description} />
+          <Collapse 
+            nameVariable="Description" 
+            Variable={appart.description} />
 
           <Collapse
             nameVariable="Equipements"
