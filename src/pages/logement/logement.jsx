@@ -9,7 +9,7 @@ function Logement() {
   const { id } = useParams();
   const appart = data.find((loge) => loge.id === id);
 
-  if (appart !== undefined) {
+  if (appart) {
     return (
       <div className="kasa-affichage">
         <Gallery namealt={appart.title} />
